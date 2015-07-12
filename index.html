@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+	<title>Asteroid Rescue</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="wrapper">
+        <canvas id="background" width="600" height="400">
+			<p>Please use a browser that supports canvas to play this game.</p>
+		</canvas>
+		<canvas id="main" width="600" height="400"></canvas>
+		<canvas id="ship" width="600" height="400"></canvas>
+		
+		<div class="score">SCORE: <span id="score"></span></div>
+		<div class="game-over" id="game-over">GAME OVER<p><span onclick="game.restart()">Restart</span></p></div>
+		
+		<div id="greeting">
+			<h2>Space Rescue</h2>
+			<p>The year is 2187 and a squadron of Earth's alien allies have become trapped in a dangerous asteroid field.
+			You are sent on a mission to save them by giving them safe refuge on your ship. 
+			<p>
+				Collect as many alien ships while avoiding the asteroids.
+			</p> 
+			<p>
+				Control your ship with the arrow keys.
+			</p>
+			<p>
+				Click anywhere to start the game.
+			</p>
+		</div>
+		<footer>
+			Created by TKU 2014
+		</footer>
+	</div>
+	<script src="jquery-1.10.2.min.js"></script>
+	<script src="game.js"></script>
+</body>
